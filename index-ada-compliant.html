@@ -1,0 +1,873 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Renew Oasis Med Spa - Your Path to Radiant Skin</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    
+    <!-- ADA Compliance Meta Tags -->
+    <meta name="description" content="Renew Oasis Med Spa offers professional BOTOX, dermal fillers, microdermabrasion, chemical peels, and sclerotherapy treatments in Mexico, MO. Call (573) 591-1110 for your free consultation.">
+    <meta name="keywords" content="med spa, botox, dermal fillers, microdermabrasion, chemical peels, sclerotherapy, Mexico Missouri, skincare">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        /* Skip to main content link for screen readers */
+        .skip-link {
+            position: absolute;
+            top: -40px;
+            left: 6px;
+            background: #000;
+            color: #fff;
+            padding: 8px;
+            text-decoration: none;
+            z-index: 1000;
+            border-radius: 4px;
+        }
+        
+        .skip-link:focus {
+            top: 6px;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            font-size: 16px; /* Minimum 16px for accessibility */
+        }
+        
+        /* Focus indicators for keyboard navigation */
+        *:focus {
+            outline: 3px solid #20d4aa;
+            outline-offset: 2px;
+        }
+        
+        /* Header */
+        .header {
+            background: #1a2332;
+            color: white;
+            padding: 1rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 2rem;
+        }
+        
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        
+        .logo-icon {
+            width: 40px;
+            height: 40px;
+            background: #20d4aa;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+        }
+        
+        .logo-text h1 {
+            font-size: 1.5rem;
+            font-weight: 600;
+        }
+        
+        .logo-text p {
+            font-size: 0.9rem;
+            opacity: 0.8;
+        }
+        
+        .nav-menu {
+            display: flex;
+            gap: 2rem;
+            list-style: none;
+        }
+        
+        .nav-menu a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+            padding: 0.5rem;
+            border-radius: 4px;
+        }
+        
+        .nav-menu a:hover,
+        .nav-menu a:focus {
+            color: #20d4aa;
+            background: rgba(32, 212, 170, 0.1);
+        }
+        
+        .phone-btn {
+            background: #20d4aa;
+            color: white;
+            padding: 0.75rem 1.5rem;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: background 0.3s;
+        }
+        
+        .phone-btn:hover,
+        .phone-btn:focus {
+            background: #1ab896;
+        }
+        
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, #20d4aa 0%, #1ab896 100%);
+            color: white;
+            padding: 4rem 0;
+            text-align: center;
+        }
+        
+        .hero-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+        
+        .hero-card {
+            background: #1a2332;
+            padding: 2rem;
+            border-radius: 15px;
+            margin-bottom: 3rem;
+            display: inline-block;
+        }
+        
+        .hero-card h2 {
+            font-size: 1.8rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        .hero-card p {
+            opacity: 0.8;
+            margin-bottom: 1rem;
+        }
+        
+        .hero-phone {
+            color: #20d4aa;
+            font-size: 1.5rem;
+            font-weight: 600;
+        }
+        
+        .hero h1 {
+            font-size: 3.5rem;
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+            line-height: 1.2;
+        }
+        
+        .hero-subtitle {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+            opacity: 0.9;
+        }
+        
+        .hero-buttons {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        
+        .btn-primary {
+            background: white;
+            color: #1a2332;
+            padding: 1rem 2rem;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: transform 0.3s, box-shadow 0.3s;
+            min-height: 44px; /* Minimum touch target size */
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .btn-primary:hover,
+        .btn-primary:focus {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+        
+        .btn-secondary {
+            background: transparent;
+            color: white;
+            border: 2px solid white;
+            padding: 1rem 2rem;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: background 0.3s;
+            min-height: 44px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .btn-secondary:hover,
+        .btn-secondary:focus {
+            background: white;
+            color: #1a2332;
+        }
+        
+        /* About Section */
+        .about {
+            padding: 4rem 0;
+            background: #f8f9fa;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+        
+        .about-content {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 3rem;
+            align-items: center;
+        }
+        
+        .about-image {
+            text-align: center;
+        }
+        
+        .about-image img {
+            width: 300px;
+            height: 300px;
+            border-radius: 50%;
+            object-fit: cover;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+        
+        .about-text h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            color: #1a2332;
+        }
+        
+        .about-text p {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: #666;
+        }
+        
+        /* Services Section */
+        .services {
+            padding: 4rem 0;
+        }
+        
+        .services h2 {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 3rem;
+            color: #1a2332;
+        }
+        
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2rem;
+        }
+        
+        .service-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+        
+        .service-card:hover,
+        .service-card:focus-within {
+            transform: translateY(-5px);
+        }
+        
+        .service-card h3 {
+            color: #1a2332;
+            margin-bottom: 1rem;
+            font-size: 1.3rem;
+        }
+        
+        .service-card p {
+            color: #666;
+            margin-bottom: 1rem;
+        }
+        
+        .service-price {
+            color: #20d4aa;
+            font-weight: 600;
+            font-size: 1.1rem;
+        }
+        
+        /* Products Section */
+        .products {
+            padding: 4rem 0;
+            background: #f8f9fa;
+        }
+        
+        .products h2 {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 3rem;
+            color: #1a2332;
+        }
+        
+        .products-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+        
+        .product-category {
+            background: white;
+            padding: 2rem;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .product-category h3 {
+            color: #1a2332;
+            margin-bottom: 1rem;
+        }
+        
+        .product-category ul {
+            list-style: none;
+            padding-left: 0;
+        }
+        
+        .product-category li {
+            padding: 0.5rem 0;
+            color: #666;
+            border-bottom: 1px solid #eee;
+        }
+        
+        .product-category li:last-child {
+            border-bottom: none;
+        }
+        
+        /* Contact Section */
+        .contact {
+            padding: 4rem 0;
+            background: #1a2332;
+            color: white;
+        }
+        
+        .contact-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+        }
+        
+        .contact h2 {
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
+        }
+        
+        .contact-info {
+            font-size: 1.1rem;
+            line-height: 2;
+        }
+        
+        .contact-info a {
+            color: #20d4aa;
+            text-decoration: none;
+        }
+        
+        .contact-info a:hover,
+        .contact-info a:focus {
+            text-decoration: underline;
+        }
+        
+        .contact-form {
+            background: white;
+            padding: 2rem;
+            border-radius: 15px;
+            color: #333;
+        }
+        
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+        
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+            color: #333;
+        }
+        
+        .form-group input,
+        .form-group select {
+            width: 100%;
+            padding: 0.75rem;
+            border: 2px solid #ddd;
+            border-radius: 5px;
+            font-size: 1rem;
+            transition: border-color 0.3s;
+        }
+        
+        .form-group input:focus,
+        .form-group select:focus {
+            border-color: #20d4aa;
+        }
+        
+        .form-group input:invalid {
+            border-color: #dc3545;
+        }
+        
+        .submit-btn {
+            background: #20d4aa;
+            color: white;
+            padding: 1rem 2rem;
+            border: none;
+            border-radius: 25px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background 0.3s;
+            min-height: 44px;
+            font-size: 1rem;
+        }
+        
+        .submit-btn:hover,
+        .submit-btn:focus {
+            background: #1ab896;
+        }
+        
+        /* Footer */
+        .footer {
+            background: #0f1419;
+            color: white;
+            text-align: center;
+            padding: 2rem 0;
+        }
+        
+        .footer h3 {
+            margin-bottom: 0.5rem;
+        }
+        
+        .footer p {
+            opacity: 0.8;
+            margin-bottom: 1rem;
+        }
+        
+        /* High Contrast Mode Support */
+        @media (prefers-contrast: high) {
+            .hero {
+                background: #000;
+            }
+            
+            .btn-primary {
+                background: #fff;
+                color: #000;
+                border: 2px solid #000;
+            }
+            
+            .service-card,
+            .product-category,
+            .contact-form {
+                border: 2px solid #333;
+            }
+        }
+        
+        /* Reduced Motion Support */
+        @media (prefers-reduced-motion: reduce) {
+            * {
+                animation-duration: 0.01ms !important;
+                animation-iteration-count: 1 !important;
+                transition-duration: 0.01ms !important;
+            }
+        }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            .nav-container {
+                flex-direction: column;
+                gap: 1rem;
+            }
+            
+            .nav-menu {
+                flex-direction: column;
+                text-align: center;
+                gap: 1rem;
+            }
+            
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+            
+            .about-content {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+            
+            .contact-content {
+                grid-template-columns: 1fr;
+            }
+            
+            .hero-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+        
+        /* Print Styles */
+        @media print {
+            .header,
+            .hero-buttons,
+            .contact-form {
+                display: none;
+            }
+            
+            body {
+                color: #000;
+                background: #fff;
+            }
+            
+            .hero,
+            .contact {
+                background: #fff;
+                color: #000;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Skip to main content link for screen readers -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    
+    <!-- Header -->
+    <header class="header" role="banner">
+        <div class="nav-container">
+            <div class="logo">
+                <div class="logo-icon" aria-hidden="true">⭐</div>
+                <div class="logo-text">
+                    <h1>Renew Oasis</h1>
+                    <p>Med Spa</p>
+                </div>
+            </div>
+            <nav role="navigation" aria-label="Main navigation">
+                <ul class="nav-menu">
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#pricing">Pricing</a></li>
+                    <li><a href="#products">Products</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <a href="tel:5735911110" class="phone-btn" aria-label="Call us at 5 7 3 5 9 1 1 1 1 0">📞 (573) 591-1110</a>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main id="main-content" role="main">
+        <!-- Hero Section -->
+        <section class="hero" aria-labelledby="hero-heading">
+            <div class="hero-container">
+                <div class="hero-card">
+                    <div class="logo">
+                        <div class="logo-icon" aria-hidden="true">⭐</div>
+                        <div>
+                            <h2>Renew Oasis</h2>
+                            <p>Med Spa</p>
+                        </div>
+                    </div>
+                    <div class="hero-phone">573.591.1110</div>
+                </div>
+                
+                <h1 id="hero-heading">Your Path to Radiant Skin</h1>
+                <p class="hero-subtitle">
+                    Available Medical Services: Consultations, Botox, Fillers, Microdermabrasion, 
+                    Facial Peels, Sclerotherapy, Vein Treatment
+                </p>
+                
+                <div class="hero-buttons">
+                    <a href="#contact" class="btn-primary">Free Consultation</a>
+                    <a href="#services" class="btn-secondary">View Services</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="about" aria-labelledby="about-heading">
+            <div class="container">
+                <div class="about-content">
+                    <div class="about-image">
+                        <img src="brenda-gordon.jpg" alt="Professional headshot of Brenda Gordon, APRN, FNP-C, smiling at camera">
+                    </div>
+                    <div class="about-text">
+                        <h2 id="about-heading">Meet Brenda Gordon, APRN, FNP-C</h2>
+                        <p>
+                            Brenda Gordon, APRN, FNP-C is a highly experienced Nurse Practitioner with a deep passion 
+                            for helping clients achieve healthier, more radiant skin. With over 30 years of expertise, 
+                            she has dedicated her career to delivering personalized, results-driven treatments.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="services" aria-labelledby="services-heading">
+            <div class="container">
+                <h2 id="services-heading">Our Services</h2>
+                <div class="services-grid" role="list">
+                    <article class="service-card" role="listitem">
+                        <h3>BOTOX Treatments</h3>
+                        <p>Professional BOTOX injections for wrinkle reduction and facial rejuvenation.</p>
+                        <div class="service-price" aria-label="Price: $10.00 per unit">$10.00 per unit</div>
+                    </article>
+                    
+                    <article class="service-card" role="listitem">
+                        <h3>Microdermabrasion</h3>
+                        <p>Exfoliate and rejuvenate your skin with our professional microdermabrasion treatments.</p>
+                        <div class="service-price" aria-label="Price: $75.00, add on PCA Facial Peel: $115.00">
+                            $75.00<br>+ add on PCA Facial Peel: $115.00
+                        </div>
+                    </article>
+                    
+                    <article class="service-card" role="listitem">
+                        <h3>Chemical Peels</h3>
+                        <p>PCA Facial Peels and Retinol treatments for skin renewal.</p>
+                        <div class="service-price" aria-label="Pricing: PCA Facial Peel $75, Retinol 4% Peel $100, Retinol 6% Peel $150">
+                            PCA Facial Peel: $75.00<br>
+                            Retinol 4% Peel: $100.00<br>
+                            Retinol 6% Peel: $150.00
+                        </div>
+                    </article>
+                    
+                    <article class="service-card" role="listitem">
+                        <h3>Dermal Fillers</h3>
+                        <p>Juvéderm treatments for volume restoration and facial contouring.</p>
+                        <div class="service-price" aria-label="Pricing: Juvéderm Ultra and Ultra Plus $500, Volbella $520, Voluma $600">
+                            Juvéderm 1 cc syringes Ultra&Ultra Plus: $500<br>
+                            Volbella: $520<br>
+                            Voluma: $600
+                        </div>
+                    </article>
+                    
+                    <article class="service-card" role="listitem">
+                        <h3>Sclerotherapy</h3>
+                        <p>Vein treatment for spider veins.</p>
+                        <div class="service-price" aria-label="Pricing: Initial treatment first syringe $100, second and third $75 each, follow up treatments $50 each syringe">
+                            Initial treatment 1st syringe: $100.00<br>
+                            2nd & 3rd: $75 each<br>
+                            Follow up vein treatment: $50 each syringe
+                        </div>
+                    </article>
+                    
+                    <article class="service-card" role="listitem">
+                        <h3>Consultations</h3>
+                        <p>Professional consultations to determine the best treatment plan for you.</p>
+                        <div class="service-price" aria-label="Free consultations available in MedSpa and virtually">
+                            Free Consultation in MedSpa<br>
+                            Free Consultation, Virtual
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Products Section -->
+        <section id="products" class="products" aria-labelledby="products-heading">
+            <div class="container">
+                <h2 id="products-heading">Physician Choice Products</h2>
+                <div class="products-grid" role="list">
+                    <article class="product-category" role="listitem">
+                        <h3>Trial Size PCA Products</h3>
+                        <ul role="list">
+                            <li role="listitem">Rebalance</li>
+                            <li role="listitem">Hydrator plus SPF 30</li>
+                        </ul>
+                    </article>
+                    
+                    <article class="product-category" role="listitem">
+                        <h3>Full Size PCA Products</h3>
+                        <ul role="list">
+                            <li role="listitem">Rebalance 7oz</li>
+                            <li role="listitem">Hydrator plus SPF30 6.6 oz</li>
+                        </ul>
+                    </article>
+                    
+                    <article class="product-category" role="listitem">
+                        <h3>Hyaluronic Acid Serums</h3>
+                        <ul role="list">
+                            <li role="listitem">Hyaluronic Acid Boosting Serum 1 oz</li>
+                            <li role="listitem">Hyaluronic Acid Boosting Serum 3 oz</li>
+                        </ul>
+                    </article>
+                    
+                    <article class="product-category" role="listitem">
+                        <h3>Specialty Products</h3>
+                        <ul role="list">
+                            <li role="listitem">Exlinea Pro-Peptide Serum</li>
+                            <li role="listitem">Dual Action Redness Relief</li>
+                        </ul>
+                        <p style="margin-top: 1rem; font-style: italic;">
+                            Contact us for pricing information on all Physician Choice products
+                        </p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact" aria-labelledby="contact-heading">
+            <div class="container">
+                <div class="contact-content">
+                    <div>
+                        <h2 id="contact-heading">Get in Touch</h2>
+                        <p>Ready to start your journey to radiant skin?</p>
+                        
+                        <div class="contact-info">
+                            <p><a href="tel:5735911110" aria-label="Call us at 5 7 3 5 9 1 1 1 1 0">📞 (573) 591-1110</a></p>
+                            <p>📍 1816 E. Liberty St<br>Mexico, MO 65265</p>
+                            <p>📧 <a href="mailto:RenewOasisMedSpa@gmail.com">RenewOasisMedSpa@gmail.com</a></p>
+                            <p>Call for appointment scheduling</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-form">
+                        <h3>Schedule Your Free Consultation</h3>
+                        <form role="form" aria-label="Contact form">
+                            <div class="form-group">
+                                <label for="name">Name <span aria-label="required">*</span></label>
+                                <input type="text" id="name" name="name" required aria-required="true" aria-describedby="name-error">
+                                <div id="name-error" role="alert" aria-live="polite"></div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="phone">Phone <span aria-label="required">*</span></label>
+                                <input type="tel" id="phone" name="phone" required aria-required="true" aria-describedby="phone-error">
+                                <div id="phone-error" role="alert" aria-live="polite"></div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="email">Email <span aria-label="required">*</span></label>
+                                <input type="email" id="email" name="email" required aria-required="true" aria-describedby="email-error">
+                                <div id="email-error" role="alert" aria-live="polite"></div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="services">Interested Services</label>
+                                <select id="services" name="services" aria-describedby="services-help">
+                                    <option value="">Select a service</option>
+                                    <option value="botox">BOTOX Treatments</option>
+                                    <option value="microdermabrasion">Microdermabrasion</option>
+                                    <option value="chemical-peels">Chemical Peels</option>
+                                    <option value="dermal-fillers">Dermal Fillers</option>
+                                    <option value="sclerotherapy">Sclerotherapy</option>
+                                    <option value="consultation">Consultation</option>
+                                </select>
+                                <div id="services-help" class="sr-only">Optional: Select the service you're most interested in</div>
+                            </div>
+                            
+                            <button type="submit" class="submit-btn" aria-describedby="submit-help">Schedule Free Consultation</button>
+                            <div id="submit-help" class="sr-only">Submit form to request your free consultation</div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer" role="contentinfo">
+        <div class="container">
+            <h3>Renew Oasis MedSpa</h3>
+            <p>Your Path to Radiant Skin</p>
+            <p>© 2025 Renew Oasis MedSpa. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                    // Set focus to target for screen readers
+                    target.setAttribute('tabindex', '-1');
+                    target.focus();
+                }
+            });
+        });
+
+        // Enhanced form validation and submission
+        document.querySelector('form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Clear previous errors
+            document.querySelectorAll('[role="alert"]').forEach(el => el.textContent = '');
+            
+            let isValid = true;
+            const name = document.getElementById('name');
+            const phone = document.getElementById('phone');
+            const email = document.getElementById('email');
+            
+            // Validate name
+            if (!name.value.trim()) {
+                document.getElementById('name-error').textContent = 'Name is required';
+                isValid = false;
+            }
+            
+            // Validate phone
+            if (!phone.value.trim()) {
+                document.getElementById('phone-error').textContent = 'Phone number is required';
+                isValid = false;
+            }
+            
+            // Validate email
+            if (!email.value.trim()) {
+                document.getElementById('email-error').textContent = 'Email is required';
+                isValid = false;
+            } else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email.value)) {
+                document.getElementById('email-error').textContent = 'Please enter a valid email address';
+                isValid = false;
+            }
+            
+            if (isValid) {
+                alert('Thank you for your interest! We will contact you soon to schedule your free consultation.');
+                this.reset();
+            } else {
+                // Focus on first error field
+                const firstError = document.querySelector('[role="alert"]:not(:empty)');
+                if (firstError) {
+                    const fieldId = firstError.id.replace('-error', '');
+                    document.getElementById(fieldId).focus();
+                }
+            }
+        });
+
+        // Keyboard navigation enhancement
+        document.addEventListener('keydown', function(e) {
+            // Escape key to close any modals or return focus
+            if (e.key === 'Escape') {
+                document.activeElement.blur();
+            }
+        });
+    </script>
+</body>
+</html>
